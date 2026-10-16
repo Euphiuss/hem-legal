@@ -30,7 +30,8 @@
     Hem ist eine App zur gemeinsamen Organisation eines Haushalts (Aufgaben, Punkte,
     Belohnungen, Ausgaben) zwischen zwei Personen ("Haushalt"). Zur Nutzung ist ein Konto
     erforderlich. Die folgenden Abschnitte erklären, welche Daten dabei zu welchem Zweck
-    verarbeitet werden.
+    verarbeitet werden. Wir setzen in der App keine Werbung, kein Tracking und keine
+    Analyse-Dienste ein.
   </p>
 
   <h2>3. Registrierung, Login und Konto</h2>
@@ -39,6 +40,18 @@
     gespeichert). Diese Daten werden benötigt, um dir ein Konto bereitzustellen und dich bei
     späteren Nutzungen zu authentifizieren. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
     (Erfüllung des Nutzungsvertrags).
+  </p>
+
+  <h3>Anmeldung mit Apple oder Google</h3>
+  <p>
+    Du kannst dich alternativ mit Apple oder Google anmelden. Die Anmeldung läuft über die
+    Seiten des jeweiligen Anbieters. Wir erhalten von dort deinen Namen und deine
+    E-Mail-Adresse (bei Apple auf Wunsch eine von Apple erzeugte Relay-Adresse, die deine echte
+    Adresse verbirgt), aber kein Passwort. Für die Verarbeitung durch Apple bzw. Google gelten
+    deren eigene Datenschutzerklärungen:
+    <a href="https://www.apple.com/legal/privacy/de-ww/" target="_blank" rel="noopener">Apple</a>,
+    <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener">Google</a>.
+    Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO.
   </p>
 
   <h3>Passwort vergessen / E-Mail-Bestätigung</h3>
@@ -55,15 +68,19 @@
   </p>
   <ul>
     <li>Aufgaben (Titel, Fälligkeit, Zuweisung, Punkte, Erledigungsstatus)</li>
+    <li>dein Punktestand</li>
     <li>Belohnungen und deren Einlösung ("Redemptions")</li>
     <li>Erinnerungen zwischen Haushaltsmitgliedern ("Nudges")</li>
     <li>Koch-Zuweisungen</li>
-    <li>gemeinsam erfasste Ausgaben ("Finance")</li>
+    <li>gemeinsam erfasste Ausgaben ("Finance": Titel, Betrag, Datum)</li>
     <li>dein Anzeigename und Profilangaben</li>
+    <li>Einladungscodes und die Zeitpunkte von Beitrittsversuchen (zum Schutz vor Missbrauch,
+      Rechtsgrundlage Art. 6 Abs. 1 lit. f DSGVO)</li>
   </ul>
   <p>
     Diese Daten sind ausschließlich für Mitglieder desselben Haushalts sichtbar. Rechtsgrundlage
-    ist Art. 6 Abs. 1 lit. b DSGVO, da diese Funktionen den Kern des Nutzungsvertrags bilden.
+    ist, soweit oben nichts anderes steht, Art. 6 Abs. 1 lit. b DSGVO, da diese Funktionen den
+    Kern des Nutzungsvertrags bilden.
   </p>
 
   <h2>5. Hosting und Auftragsverarbeitung (Supabase)</h2>
@@ -71,15 +88,16 @@
     Wir nutzen für Datenbank, Authentifizierung und Backend-Funktionen den Dienst
     <strong>Supabase</strong> (Supabase, Inc., USA). Die Daten werden dabei auf Servern in der
     Region <strong>eu-west-2 (London, Vereinigtes Königreich)</strong> gespeichert und
-    verarbeitet — nicht in den USA.
+    verarbeitet, nicht in den USA. Beim Zugriff auf die Server fallen technisch notwendige
+    Zugriffsdaten an (z. B. IP-Adresse und Zeitpunkt der Anfrage).
   </p>
   <p>
     Das Vereinigte Königreich ist von der Europäischen Kommission als Land mit angemessenem
     Datenschutzniveau anerkannt (Angemessenheitsbeschluss), sodass für die Speicherung selbst
     keine zusätzlichen Garantien erforderlich sind. Da Supabase, Inc. als Unternehmen jedoch in
     den USA ansässig ist, kann ein Zugriff im Rahmen der Auftragsverarbeitung nicht
-    vollständig ausgeschlossen werden. Mit Supabase ist ein Auftragsverarbeitungsvertrag (Data
-    Processing Agreement) inkl. EU-Standardvertragsklauseln abzuschließen, der diesen Fall
+    vollständig ausgeschlossen werden. Mit Supabase besteht ein Auftragsverarbeitungsvertrag
+    (Data Processing Agreement) einschließlich EU-Standardvertragsklauseln, der diesen Fall
     zusätzlich absichert.
   </p>
   <p>
@@ -87,54 +105,82 @@
     und <a href="https://supabase.com/legal/dpa" target="_blank" rel="noopener">supabase.com/legal/dpa</a>.
   </p>
 
-  <h2>6. Google Fonts</h2>
+  <h2>6. Abo und Käufe</h2>
   <p>
-    Die App lädt Schriftarten (Google Fonts, "Poppins") zur Laufzeit von Servern des Anbieters
-    Google nach. Dabei wird deine IP-Adresse an Google (Google Ireland Limited bzw. Google LLC,
-    USA) übertragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (einheitliche und ansprechende
-    Darstellung der App). Weitere Informationen:
-    <a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener">Google Fonts – Datenschutz-FAQ</a>.
+    Nach einer kostenlosen Testphase ist die Nutzung von Hem kostenpflichtig (Abonnement). Der
+    Kauf erfolgt ausschließlich über den Apple App Store bzw. Google Play. Zahlungsdaten
+    (z. B. Kreditkarte) erhalten wir nicht. Zur Prüfung deines Abos nutzen wir den Dienst
+    <strong>RevenueCat</strong> (RevenueCat, Inc., USA). Dorthin werden deine App-Nutzer-ID (die
+    ID deines Kontos), dein Abo-Status und dein Kaufverlauf übertragen. Rechtsgrundlage ist
+    Art. 6 Abs. 1 lit. b DSGVO. Mit RevenueCat besteht ein Auftragsverarbeitungsvertrag
+    einschließlich EU-Standardvertragsklauseln, auf deren Grundlage die Daten in die USA
+    übermittelt werden. Weitere Informationen:
+    <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">revenuecat.com/privacy</a>.
   </p>
 
-  <h2>7. Lokale Speicherung auf deinem Gerät</h2>
+  <h2>7. Schriftart</h2>
   <p>
-    Die App speichert bestimmte Einstellungen (z. B. Anzeigepräferenzen) lokal auf deinem Gerät.
-    Diese Daten verlassen dein Gerät nicht und werden nicht an uns oder Dritte übertragen.
+    Die Schriftart "Poppins" ist fest in der App enthalten (Lizenz: SIL Open Font License).
+    Es werden keine Schriftarten von Google oder anderen Anbietern nachgeladen, und dafür wird
+    auch keine IP-Adresse übertragen.
   </p>
 
-  <h2>8. Empfänger der Daten</h2>
+  <h2>8. Lokale Speicherung auf deinem Gerät</h2>
+  <p>
+    Die App speichert bestimmte Angaben lokal auf deinem Gerät, zum Beispiel die Antworten aus
+    dem Einstiegsfragebogen, den Merker, dass der Einstieg abgeschlossen ist, und einen
+    Zwischenspeicher für die Koch-Zuweisung. Diese Daten verlassen dein Gerät nicht und werden
+    beim Abmelden oder beim Löschen deines Kontos entfernt.
+  </p>
+
+  <h2>9. Empfänger der Daten</h2>
   <p>
     Eine Weitergabe deiner Daten erfolgt ausschließlich an die in dieser Erklärung genannten
-    technischen Dienstleister (Supabase, Google Fonts), soweit dies zur Bereitstellung der App
-    erforderlich ist. Eine Weitergabe zu Werbezwecken findet nicht statt.
+    Dienstleister: Supabase (Hosting, Datenbank, Anmeldung), RevenueCat (Prüfung des Abos) und,
+    wenn du sie nutzt, Apple und Google (Anmeldung, Käufe über den jeweiligen Store), soweit dies
+    zur Bereitstellung der App erforderlich ist. Eine Weitergabe zu Werbezwecken findet nicht
+    statt.
   </p>
 
-  <h2>9. Speicherdauer</h2>
+  <h2>10. Speicherdauer und Löschung</h2>
   <p>
-    Deine Daten werden gespeichert, solange dein Konto besteht. Du kannst dein Konto und alle
-    zugehörigen Daten jederzeit in der App unter <em>Profil → Gefahrenzone → Konto löschen</em>
-    endgültig löschen.
+    Deine Daten werden gespeichert, solange dein Konto besteht. Du kannst dein Konto jederzeit
+    in der App unter <em>Profil → Gefahrenzone → Account löschen</em> endgültig löschen. Dabei
+    werden deine personenbezogenen Daten gelöscht (Konto, Profil, deine Ausgaben, Einlösungen,
+    Erinnerungen und eigenen Vorlagen). Wohnst du in einem Haushalt mit einer weiteren Person,
+    bleiben die gemeinsamen Aufgaben und Belohnungen bei dieser Person erhalten. Bist du die
+    letzte Person im Haushalt, wird der gesamte Haushalt mit allen Daten gelöscht.
+  </p>
+  <p>
+    Ein bestehendes Abo wird durch das Löschen des Kontos nicht gekündigt. Bitte kündige es
+    zusätzlich im App Store bzw. bei Google Play. Daten zu Käufen bewahren Apple, Google und
+    RevenueCat nach ihren eigenen Fristen auf. Auf Anfrage veranlassen wir auch bei RevenueCat
+    die Löschung.
   </p>
 
-  <h2>10. Deine Rechte</h2>
+  <h2>11. Deine Rechte</h2>
   <p>Du hast nach der DSGVO folgende Rechte, die du über die oben genannte E-Mail-Adresse geltend machen kannst:</p>
   <ul>
     <li>Auskunft über die zu dir gespeicherten Daten (Art. 15 DSGVO)</li>
     <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
-    <li>Löschung (Art. 17 DSGVO) — auch direkt in der App möglich</li>
+    <li>Löschung (Art. 17 DSGVO), auch direkt in der App möglich</li>
     <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
     <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
     <li>Widerspruch gegen Verarbeitungen auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (Art. 21 DSGVO)</li>
-    <li>Beschwerde bei einer Datenschutzaufsichtsbehörde, z. B. der Landesbeauftragten für
-      Datenschutz und Informationsfreiheit Nordrhein-Westfalen</li>
+    <li>Beschwerde bei einer Datenschutzaufsichtsbehörde, z. B. dem Landesbeauftragten für den
+      Datenschutz und die Informationsfreiheit Rheinland-Pfalz</li>
   </ul>
+  <p>
+    Die Angabe deiner E-Mail-Adresse ist für die Erstellung eines Kontos erforderlich. Eine
+    automatisierte Entscheidungsfindung oder ein Profiling findet nicht statt.
+  </p>
 
-  <h2>11. Änderungen dieser Erklärung</h2>
+  <h2>12. Änderungen dieser Erklärung</h2>
   <p>
     Wir passen diese Datenschutzerklärung an, wenn sich die App oder die rechtlichen Vorgaben
     ändern. Es gilt die jeweils aktuelle, auf dieser Seite veröffentlichte Fassung.
   </p>
 
-  <p><small>Stand: 14. Juli 2026</small></p>
+  <p><small>Stand: 16. Oktober 2026</small></p>
 </body>
 </html>
